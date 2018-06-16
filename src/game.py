@@ -59,6 +59,12 @@ class Game:
         self._left_fighter = self._json_info.get('O1')
         self._right_fighter = self._json_info.get('O2')
 
+
+    @property
+    def fighters(self):
+        return f"{self._left_fighter} - {self._right_fighter}"
+
+
     @property
     def id(self):
         return self._id
