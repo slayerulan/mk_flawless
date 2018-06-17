@@ -59,6 +59,8 @@ class Game:
         self._left_fighter = self._json_info.get('O1')
         self._right_fighter = self._json_info.get('O2')
 
+    def is_fw(self):
+        return bool(self._fw_coef)
 
     @property
     def fighters(self):
