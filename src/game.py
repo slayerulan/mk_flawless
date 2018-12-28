@@ -20,20 +20,24 @@ class Game:
         return f"""{self._left_fighter} - {self._right_fighter}
 П1 в раунде: {self._first_win_coef}
 П2 в раунде: {self._second_win_coef}
-Кф на чистые 0.5б: {self._flawless_total}
+
+Статистика:
 {self._left_fighter} - {get_stats(self._left_fighter)}
 {self._right_fighter} - {get_stats(self._right_fighter)}
-Чистая победа: {self._fw_coef}"""
+Чистая победа: {self._fw_coef}
+Кф 0.5б: {self._flawless_total}"""
 
     def __str__(self):
         return f"""{self._left_fighter} - {self._right_fighter}
 П1 в раунде: {self._first_win_coef}
 П2 в раунде: {self._second_win_coef}
-Кф на чистые 0.5б: {self._flawless_total}
+
 Статистика:
 {self._left_fighter} - {get_stats(self._left_fighter)}
 {self._right_fighter} - {get_stats(self._right_fighter)}
-Чистая победа: {self._fw_coef}"""
+
+Чистая победа: {self._fw_coef}
+Кф 0.5б: {self._flawless_total}"""
 
     def get_info_by_id(self):
         session = HTMLSession()
